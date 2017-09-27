@@ -4,6 +4,8 @@ require 'pry'
 def prime?(number)
   if number < 0
     number = (number * -1)
+  elsif number >= -1 || number <= 1
+
   end
   begin_range = 1
   end_range = number/2 + 1
@@ -18,5 +20,3 @@ def prime?(number)
     return prime
   end
 end
-
-puts prime?(0)
