@@ -4,12 +4,9 @@ require 'pry'
 def prime?(number)
   if number < 0
     number = (number * -1)
-    begin_range = number/2 -1
-    end_range = number/-2 + 1
-  else
-    begin_range = 0
-    end_range = number/2 + 1
   end
+  begin_range = 0
+  end_range = number/2 + 1
   factors = ((begin_range)..(end_range)).to_a
 
   if number % 2 == 0
