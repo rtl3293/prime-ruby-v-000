@@ -7,7 +7,7 @@ def prime?(number)
     begin_range = number/2 -1
     end_range = number/-2 + 1
   else
-    begin_range = number/-2 - 1
+    begin_range = 0
     end_range = number/2 + 1
   end
   factors = ((begin_range)..(end_range)).to_a
