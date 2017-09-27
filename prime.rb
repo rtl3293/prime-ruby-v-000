@@ -2,7 +2,7 @@
 def prime?(number)
   begin_range = number/-2
   end_range = number/2
-  factors = [(number/-2)..(number/2)]
+  factors = [(begin_range)..(end_range)]
   if number % 2 == 0
     return false
   else
