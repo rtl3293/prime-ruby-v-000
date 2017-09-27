@@ -15,7 +15,6 @@ def prime?(number)
     prime = factors.any? do |factor|
       number % factor == 0
     end
-    puts "Be sure to account for negative numbers!"
     return prime
   end
 end
