@@ -2,7 +2,7 @@
 require 'pry'
 
 def prime?(number)
-  if number < 1
+  if number <= 1
     false
   else
     begin_range = 1
