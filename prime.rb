@@ -1,4 +1,6 @@
 # Add  code here!
+require 'pry'
+
 def prime?(number)
   if number < 0
     number = (number * -1)
