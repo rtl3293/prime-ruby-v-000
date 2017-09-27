@@ -4,7 +4,10 @@ require 'pry'
 def prime?(number)
   if number >= -1 || number <= 1
     return false
+  elsif number < -1
+
   else
+    
     begin_range = 1
     end_range = number/2 + 1
     factors = ((begin_range)..(end_range)).to_a
