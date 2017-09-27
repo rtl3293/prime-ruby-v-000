@@ -13,7 +13,6 @@ def prime?(number)
       return false
     else
       prime = factors.any? do |factor|
-        binding.pry
         number % factor == 0
       end
       prime
