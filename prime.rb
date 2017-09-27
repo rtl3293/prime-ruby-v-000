@@ -16,7 +16,7 @@ def prime?(number)
         number % factor == 0
       end
       binding.pry
-      return prime
+      prime
     end
   end
 end
