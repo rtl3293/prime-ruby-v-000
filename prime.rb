@@ -5,8 +5,8 @@ def prime?(number)
   if number < 0
     number = (number * -1)
   elsif number >= -1 || number <= 1
-
-  end
+    return true
+  else
   begin_range = 1
   end_range = number/2 + 1
   factors = ((begin_range)..(end_range)).to_a
@@ -18,5 +18,6 @@ def prime?(number)
       number % factor == 0
     end
     return prime
+  end
   end
 end
