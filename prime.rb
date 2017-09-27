@@ -5,7 +5,7 @@ def prime?(number)
   if number <= 1
     false
   else
-    begin_range = 1
+    begin_range = 2
     end_range = number/2 + 1
     factors = ((begin_range)..(end_range)).to_a
     binding.pry
