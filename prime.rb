@@ -4,7 +4,7 @@ def prime?(number)
   end_range = number/2 + 1
   factors = ((begin_range)..(end_range)).to_a
   if number < 0
-    number = number * -1
+    number = (number * -1)
   end
   if number % 2 == 0
     return false
