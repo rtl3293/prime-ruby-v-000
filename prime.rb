@@ -11,13 +11,14 @@ def prime?(number)
     end_range = number/2 + 1
   end
   factors = ((begin_range)..(end_range)).to_a
-  binding.pry
+
   if number % 2 == 0
     return false
   else
     prime = factors.any? do |factor|
       number % factor == 0
     end
+    binding.pry
     return prime
   end
 end
