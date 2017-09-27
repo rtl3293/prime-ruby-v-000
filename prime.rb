@@ -3,7 +3,9 @@ def prime?(number)
   begin_range = number/-2 - 1
   end_range = number/2 + 1
   factors = ((begin_range)..(end_range)).to_a
-  number = abs(number)
+  if number < 0
+    number = number * -1
+  end
   if number % 2 == 0
     return false
   else
