@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(number)
-  factors = [2..(number/2)]
+  factors = [(number/-2)..(number/2)]
   if number % 2 == 0
     return false
   else
