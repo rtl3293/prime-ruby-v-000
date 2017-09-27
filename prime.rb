@@ -2,9 +2,7 @@
 require 'pry'
 
 def prime?(number)
-  if number < 0
-    number = (number * -1)
-  elsif number >= -1 || number <= 1
+  if number >= -1 || number <= 1
     return true
   else
     begin_range = 1
