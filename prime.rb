@@ -15,7 +15,7 @@ def prime?(number)
       prime = factors.any? do |factor|
         number % factor == 0
       end
-      prime
+      !prime
     end
   end
 end
