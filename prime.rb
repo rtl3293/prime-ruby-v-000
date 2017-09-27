@@ -8,7 +8,6 @@ def prime?(number)
     begin_range = 2
     end_range = number/2 + 1
     factors = ((begin_range)..(end_range)).to_a
-    binding.pry
     if number % 2 == 0
       return false
     else
