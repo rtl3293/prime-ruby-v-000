@@ -15,7 +15,6 @@ def prime?(number)
     prime = factors.any? do |factor|
       number % factor == 0
     end
-    binding.pry
     return prime
   end
 end
