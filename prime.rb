@@ -12,3 +12,5 @@ def prime?(number)
     return prime
   end
 end
+
+puts prime?(-4)
