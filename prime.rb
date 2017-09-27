@@ -20,4 +20,4 @@ def prime?(number)
   end
 end
 
-puts prime?(1763)
+puts prime?(3)
