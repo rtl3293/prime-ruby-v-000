@@ -16,4 +16,4 @@ def prime?(number)
   end
 end
 
-puts prime?(-4)
+puts prime?(-5)
