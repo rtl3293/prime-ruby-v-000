@@ -1,8 +1,12 @@
 # Add  code here!
 def prime?(number)
-  factors = [1..(number/2)]
+  factors = [2..(number/2)]
   if number % 2 == 0
     return false
-  else 
-    
+  else
+    prime = factors.any? do |factor|
+      number % factor == 0
+    end
+    return prime
+  end
 end
